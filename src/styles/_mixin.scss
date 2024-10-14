@@ -1,0 +1,20 @@
+@mixin orientation($orientation) {
+  @if $orientation == 'landscape' {
+    @media (orientation: landscape) {
+      @content;
+    }
+  } @else if $orientation == 'portrait' {
+    @media (orientation: portrait) {
+      @content;
+    }
+  } @else {
+    @error "Invalid orientation: #{$orientation}.";
+  }
+}
+
+@mixin center-flex() {
+  @extend .d-flex;
+  @extend .justify-content-center;
+  @extend .align-items-center;
+}
+

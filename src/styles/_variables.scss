@@ -1,0 +1,27 @@
+// Define a Sass map of colors
+$colors: (
+  main: #FEE125,
+  second: #7A77B9,
+  third: #EBE8E7,
+  fourth: #FF026C,
+  fontcolor: #161E21,
+  info: #45FEFF,
+  success: #28a745,
+  danger: #dc3545,
+  warning: #ffc107,
+  light: #f8f9fa,
+  dark: #343a40,
+);
+
+// Access color values using map-get function
+$fontcolor: map-get($colors, fontcolor);
+$main: map-get($colors, main);
+$third: map-get($colors, third);
+$fourth: map-get($colors, fourth);
+$second: map-get($colors, second);
+$success: map-get($colors, success);
+$danger: map-get($colors, danger);
+$warning: map-get($colors, warning);
+$info: map-get($colors, info);
+$light: map-get($colors, light);
+$dark: map-get($colors, dark);

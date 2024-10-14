@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Sedan+SC&display=swap");
+@import "~bootstrap/scss/bootstrap";
+@import "./variables";
+@import "./mixin";
+
+html {
+  font-size: 1rem;
+}
+
+body {
+  @extend .m-0;
+  @extend .p-0;
+  height: 100vh;
+  font-family: "Sedan SC", serif;
+  font-weight: 400;
+  font-style: normal;
+
+  #root {
+    @extend .container-fluid;
+    background-color: $main;
+
+    #navbar {
+      @extend .m-0;
+      @extend .p-0;
+      @extend .ps-2;
+      @extend .position-fixed;
+      z-index: 1;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: $second;
+      overflow-x: hidden;
+      border-radius: 0 15px 15px 0;
+
+      @include media-breakpoint-down(md) {
+        width: calc(100vw / 12);
+      }
+      @include media-breakpoint-up(md) {
+        width: calc(100vw / 6);
+      }
+
+      #navbar-title {
+        @include center-flex;
+        @extend .pt-3;
+        @extend .mb-3;
+        .navbar-brand {
+          font-family: "Briem Hand", cursive;
+          font-optical-sizing: auto;
+          font-weight: 900;
+          font-style: normal;
+          @extend .h3;
+          color: $fontcolor;
+          @include center-flex;
+          height: calc(100vh / 12);
+          margin-bottom: calc(100vh / 15);
+          border-radius: 25px 0 0 25px;
+          @extend .col-12;
+          @extend .text-center;
+          @include media-breakpoint-down(md) {
+            margin-right: 7px !important;
+            writing-mode: vertical-rl;
+            white-space: nowrap;
+            transform: rotate(180deg);
+            margin-bottom: 0;
+            border-radius: 0 25px 25px 0;
+            height: calc(100vh / 7);
+            @extend .col-12;
+          }
+        }
+      }
+
+      #navlinks {
+        @include media-breakpoint-down(md) {
+          height: calc(100vh / 6);
+        }
+        .nav {
+          .nav-item {
+            @include center-flex;
+            @extend .col-12;
+
+            @include media-breakpoint-down(md) {
+              margin-bottom: calc(100vh / 35);
+            }
+
+            .nav-link {
+              @include center-flex;
+              @extend .text-nowrap;
+              @extend .h4;
+              @extend .text-center;
+              height: calc(100vh / 12);
+              margin-bottom: calc(100vh / 15);
+              border-radius: 25px 0 0 25px;
+              width: 100%;
+              background-color: $third;
+              outline-color: $main;
+              outline-style: solid;
+              outline-width: 4px;
+              text-decoration: none;
+              color: $fontcolor;
+
+              @include media-breakpoint-up(md) {
+                // @extend .h4;
+              }
+
+              @include media-breakpoint-down(md) {
+                // @extend .h6;
+                writing-mode: vertical-rl;
+                white-space: nowrap;
+                transform: rotate(180deg);
+                margin-bottom: 0;
+                border-radius: 0 25px 25px 0;
+                height: calc(100vh / 7);
+                width: 100%;
+              }
+
+              &.active,
+              &:hover {
+                background-color: $main;
+                outline-color: $third;
+                box-shadow: 33px 2px 37px -30px rgba(0, 0, 0, 0.65) inset;
+                -webkit-box-shadow: 33px 2px 37px -30px rgba(0, 0, 0, 0.65) inset;
+                -moz-box-shadow: 33px 2px 37px -30px rgba(0, 0, 0, 0.65) inset;
+
+                @include media-breakpoint-down(md) {
+                  box-shadow: -30px -2px 50px -25px rgba(0, 0, 0, 0.75) inset;
+                  -webkit-box-shadow: -30px -2px 50px -25px rgba(0, 0, 0, 0.75)
+                    inset;
+                  -moz-box-shadow: -30px -2px 50px -25px rgba(0, 0, 0, 0.75)
+                    inset;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    #container {
+      @include center-flex;
+      @extend .col-12;
+      @extend .pt-2;
+      min-height: 100vh;
+
+      @include media-breakpoint-down(md) {
+        padding-left: calc(100vw / 12);
+      }
+
+      @include media-breakpoint-up(md) {
+        padding-left: calc(100vw / 6);
+      }
+
+      #home {
+        @include center-flex;
+        @extend .flex-column;
+        height: 90vh;
+        width: 95%;
+
+        #ty-text {
+          @extend .pb-5;
+          @extend .h1;
+          color: $second;
+        }
+
+        .carousel-container {
+          width: calc(100vw / 1.5);
+          height: auto;
+        }
+      }
+
+      #images {
+        @extend .col-12;
+        @extend .d-flex;
+        @extend .flex-wrap;
+        @extend .justify-content-around;
+        @extend .align-items-center;
+        .img-item {
+          &.active img {
+            @extend .position-fixed;
+            width: calc(100vw - 30vw);
+            height: auto;
+            top: 50%;
+            left: 50%;
+            transform: translate(-40%, -50%);
+            box-shadow: 2px 3px 74px 13px rgba(71, 55, 3, 0.71);
+            -webkit-box-shadow: 0px 3px 50px 13px rgba(1, 38, 87, 0.863);
+            -moz-box-shadow: 2px 3px 74px 13px rgba(71, 55, 3, 0.71);
+
+            @include media-breakpoint-up(lg) {
+              width: calc(100vw - 40vw);
+            }
+
+            @include media-breakpoint-only(xs) {
+              width: calc(100vh - 40vh);
+              left: 55%;
+              transform: translate(-50%, -50%) rotate(90deg);
+            }
+          }
+          .images {
+            @extend .rounded;
+            @extend .mx-auto;
+            @extend .d-block;
+            @extend .img-fluid;
+            @extend .img-thumbnail;
+            @extend .mb-3;
+            @include media-breakpoint-only(xs) {
+              width: calc(100vw / 2);
+            }
+
+            @include media-breakpoint-up(sm) {
+              width: calc(100vw / 3);
+            }
+
+            @include media-breakpoint-up(lg) {
+              width: calc(100vw / 4);
+            }
+          }
+        }
+      }
+    }
+  }
+}
