@@ -29,7 +29,7 @@ const Layout = () => {
     <>
       <div id="navbar" className="">
         <div id="navbar-title" className="">
-          <Link to="/graphyprintpro" className="navbar-brand">
+          <Link to="/" className="navbar-brand">
             <>
               {(winVw < 768) | (winVh < 690) ? (
                 winVw < 768 && winVh < 690 ? (
