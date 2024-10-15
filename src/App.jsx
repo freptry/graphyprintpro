@@ -1,17 +1,16 @@
 import "./index.scss";
 import React from "react";
-import Home from './pages/Home';
-import Branding from './pages/Branding';
-import Forprint from './pages/Forprint';
-import Motion from './pages/Motion';
-import Webdev from './pages/Webdev';
-import Layout from './components/layaout';
-import NoPage from './pages/Nopage';
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-
+import Home from "./pages/Home";
+import Branding from "./pages/Branding";
+import Forprint from "./pages/Forprint";
+import Motion from "./pages/Motion";
+import Webdev from "./pages/Webdev";
+import Layout from "./components/layaout";
+import NoPage from "./pages/Nopage";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -22,7 +21,7 @@ function App() {
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
 

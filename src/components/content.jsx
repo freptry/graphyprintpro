@@ -15,7 +15,7 @@ const Content = ({ dataAr }) => {
           onClick={() => toggleActive(item.id)}
         >
           <img
-            src={item.imagePath}
+            src={`${process.env.PUBLIC_URL}${item.imagePath}`}
             alt={item.title}
             className={`${item.id === activeItemId ? "" : "images"}`}
           />

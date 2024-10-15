@@ -32,24 +32,18 @@ const Layout = () => {
           <Link to="/" className="navbar-brand">
             <>
               {(winVw < 768) | (winVh < 690) ? (
-                winVw < 768 && winVh < 600 ? (
+                winVw < 768 && winVh < 690 ? (
                   <>
                     <>S</>
                   </>
                 ) : (
                   <>
-                    <>Sofian</>
+                    <>Section</>
                   </>
                 )
-              ) : winVh >= 560 ? (
-                <>
-                  <>Sofian</>
-                  <br />
-                  <>MediaDev</>
-                </>
               ) : (
                 <>
-                  <>Sofian</>
+                  <>Section</>
                 </>
               )}
             </>
@@ -67,16 +61,16 @@ const Layout = () => {
                 {winVw < 768 ? (
                   winVh < 690 ? (
                     <>
-                      <>B</>
+                      <>S</>
                     </>
                   ) : (
                     <>
-                      <>Branding</>
+                      <>Section</>
                     </>
                   )
                 ) : (
                   <>
-                    <>Branding</>
+                    <>Section</>
                   </>
                 )}
               </Link>
@@ -91,16 +85,16 @@ const Layout = () => {
                 {winVw < 768 ? (
                   winVh < 690 ? (
                     <>
-                      <>P</>
+                      <>S</>
                     </>
                   ) : (
                     <>
-                      <>For Print</>
+                      <>Section</>
                     </>
                   )
                 ) : (
                   <>
-                    <>For Print</>
+                    <>Section</>
                   </>
                 )}
               </Link>
@@ -113,24 +107,18 @@ const Layout = () => {
                 }`}
               >
                 {(winVw < 768) | (winVh < 690) ? (
-                  winVw < 768 && winVh < 600 ? (
+                  winVw < 768 && winVh < 690 ? (
                     <>
-                      <>M</>
+                      <>S</>
                     </>
                   ) : (
                     <>
-                      <>Motion</>
+                      <>Section</>
                     </>
                   )
-                ) : winVh >= 560 ? (
-                  <>
-                    <>Motion</>
-                    <br />
-                    <>Design</>
-                  </>
                 ) : (
                   <>
-                    <>Motion</>
+                    <>Section</>
                   </>
                 )}
               </Link>
@@ -145,16 +133,16 @@ const Layout = () => {
                 {winVw < 768 ? (
                   winVh < 690 ? (
                     <>
-                      <>W</>
+                      <>S</>
                     </>
                   ) : (
                     <>
-                      <>Web Sites</>
+                      <>Section</>
                     </>
                   )
                 ) : (
                   <>
-                    <>Web sites</>
+                    <>Section</>
                   </>
                 )}
               </Link>
