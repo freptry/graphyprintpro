@@ -7,7 +7,7 @@ import Motion from "./pages/Motion";
 import Webdev from "./pages/Webdev";
 import Layout from "./components/layaout";
 import NoPage from "./pages/Nopage";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 function App() {
   return (
     <Router>
