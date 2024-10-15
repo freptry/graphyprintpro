@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/graphyprintpro/static/css/main.44d7dc14.css",
-    "main.js": "/graphyprintpro/static/js/main.f9608034.js",
+    "main.js": "/graphyprintpro/static/js/main.0aacf5ca.js",
     "static/js/453.1407b060.chunk.js": "/graphyprintpro/static/js/453.1407b060.chunk.js",
     "index.html": "/graphyprintpro/index.html",
     "main.44d7dc14.css.map": "/graphyprintpro/static/css/main.44d7dc14.css.map",
-    "main.f9608034.js.map": "/graphyprintpro/static/js/main.f9608034.js.map",
+    "main.0aacf5ca.js.map": "/graphyprintpro/static/js/main.0aacf5ca.js.map",
     "453.1407b060.chunk.js.map": "/graphyprintpro/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.44d7dc14.css",
-    "static/js/main.f9608034.js"
+    "static/js/main.0aacf5ca.js"
   ]
 }
