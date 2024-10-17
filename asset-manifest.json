@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/graphyprintpro/static/css/main.44d7dc14.css",
-    "main.js": "/graphyprintpro/static/js/main.2c9df406.js",
-    "static/js/453.1407b060.chunk.js": "/graphyprintpro/static/js/453.1407b060.chunk.js",
-    "index.html": "/graphyprintpro/index.html",
-    "main.44d7dc14.css.map": "/graphyprintpro/static/css/main.44d7dc14.css.map",
-    "main.2c9df406.js.map": "/graphyprintpro/static/js/main.2c9df406.js.map",
-    "453.1407b060.chunk.js.map": "/graphyprintpro/static/js/453.1407b060.chunk.js.map"
+    "main.css": "/static/css/main.44d7dc14.css",
+    "main.js": "/static/js/main.068d2935.js",
+    "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
+    "index.html": "/index.html",
+    "main.44d7dc14.css.map": "/static/css/main.44d7dc14.css.map",
+    "main.068d2935.js.map": "/static/js/main.068d2935.js.map",
+    "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.44d7dc14.css",
-    "static/js/main.2c9df406.js"
+    "static/js/main.068d2935.js"
   ]
 }
