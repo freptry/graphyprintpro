@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://freptry.github.io/graphyprintpro",
+  "homepage": "https://www.graphyprint.com",
   "private": true,
   "dependencies": {
     "@mui/styled-engine-sc": "^6.0.0-alpha.18",
